@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+    <link rel="icon" href="images/order_icon1.png">
+
+
+    <style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+    </style>
+</head>
+<body bgcolor="gray">
+
+  
+
+  <center>
+    <h1 width="10%"  height="10%" style="border: 1px none; border-radius: 7px; background-color: rgb(59, 57, 57); color: rgb(255, 0, 34);">
+      SWEETS TRAY - CUSTOMER ORDERS           
+    </h1>
+      </center>
+    
+
+
+    
+
+<table  id="table">
+    <thead>
+         <tr>
+            <th>name</th>
+             <th>phone</th> 
+             <th>email</th>
+             <th>address</th>
+             <th>info</th>
+        </tr>
+    </thead>
+  <tbody id="table_body">
+
+  </tbody>
+
+</table>
+<br>
+<br>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD8MgbjOo-yVN8BPHmkVHuJev4i3yUUSCc",
+    authDomain: "sweets-tray-website.firebaseapp.com",
+    databaseURL: "https://sweets-tray-website.firebaseio.com",
+    projectId: "sweets-tray-website",
+    storageBucket: "sweets-tray-website.appspot.com",
+    messagingSenderId: "379546569738",
+    appId: "1:379546569738:web:7337ac41de0dff218623f3",
+    measurementId: "G-YXR6G1BVJT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    
+   <script src="https://code.jquery.com/jquery.js"></script>
+
+	<script  src="js/orders.js"></script>
+</body>
+</html>
